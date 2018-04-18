@@ -35,3 +35,50 @@ $ venv\Scripts\deactivate.bat
 ```bash
 $ pip install Flask
 ```
+
+#### Buat File Contoh Flask ###
+
+hello.py
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+```
+
+#### Export Environtment #####
+
+Windows
+
+```bash
+$ set FLASK_APP=hello.py
+```
+
+Linux
+
+```bash
+$ export FLASK_APP=hello.py
+```
+
+#### Run Aplikasi #####
+
+```bash
+$ python -m flask run
+ * Running on http://127.0.0.1:5000/
+```
+
+atau
+
+```bash
+$ flask run
+ * Running on http://127.0.0.1:5000/
+```
+
+agar bisa di akses dari komputer lain mana gunakan perintah 
+
+```bash
+$ flask run --host=0.0.0.0
+```
