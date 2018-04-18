@@ -51,17 +51,11 @@ def hello_world():
 
 #### Export Environtment #####
 
-Windows
-
 ```bash
 $ set FLASK_APP=hello.py
 ```
 
-Linux
-
-```bash
-$ export FLASK_APP=hello.py
-```
+Untuk OS Linux/Mac gunakan perintah ``export``
 
 #### Run Aplikasi #####
 
@@ -82,3 +76,11 @@ agar bisa di akses dari komputer lain mana gunakan perintah
 ```bash
 $ flask run --host=0.0.0.0
 ```
+
+agar aplikasi otomatis reload jika ada perubahan maka tambahkan perintah berikut sebelum ``run``
+
+```bash
+$ set FLASK_DEBUG=1
+```
+
+Untuk OS Linux/Mac gunakan perintah ``export``
