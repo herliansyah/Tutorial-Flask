@@ -23,3 +23,15 @@ Installing setuptools, pip............done.
 ```bash
 $ venv\Scripts\activate
 ```
+
+#### Untuk me Non Aktifkan Virtualenv ####
+
+```bash
+$ venv\Scripts\deactivate.bat
+```
+
+#### Install flask di Virtual Environtment ####
+
+```bash
+$ pip install Flask
+```
