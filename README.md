@@ -2,6 +2,18 @@
 
 Pada Tutorial kali ini diasumsikan anda menggunakan windows dan system anda sudah terinstal python
 
+## Install Python 3 di centos 6 ##
+
+``$ sudo yum install epel-release``
+
+Then install python 3.4 and its libraries using yum:
+``$ sudo yum install python34``
+
+Note that this will not install matching pip. To install pip and setuptools, you need to install them separately as follows.
+``$ curl -O https://bootstrap.pypa.io/get-pip.py``
+
+``$ sudo /usr/bin/python3.4 get-pip.py``
+
 ## Instalasi flask ##
 
 #### Install Virtual environtment di system ####
